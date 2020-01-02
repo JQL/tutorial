@@ -32,61 +32,19 @@ class m200102_191421_country_gii_table extends Migration
       'code'
     );
 
-    /*
-     * Populate the table
-     */
+    // Populate the table
     $this->batchInsert('{{%country}}', ['code', 'name', 'population'], [
       // Insert the countries
-      [
-        'AU',
-        'Australia',
-        '24016400',
-      ],
-      [
-        'BR',
-        'Brazil',
-        '205722000',
-      ],
-      [
-        'CA',
-        'Canada',
-        '35985751',
-      ],
-      [
-        'CN',
-        'China',
-        '1375210000',
-      ],
-      [
-        'DE',
-        'Germany',
-        '81459000',
-      ],
-      [
-        'FR',
-        'France',
-        '64513242',
-      ],
-      [
-        'GB',
-        'United Kingdom',
-        '65097000',
-      ],
-      [
-        'IN',
-        'India',
-        '1285400000',
-      ],
-      [
-        'RU',
-        'Russia',
-        '146519759',
-      ],
-      [
-        'US',
-        'United States',
-        '322976000',
-      ],
+      ['AU', 'Australia', '24016400',],
+      ['BR', 'Brazil', '205722000',],
+      ['CA', 'Canada', '35985751',],
+      ['CN', 'China', '1375210000',],
+      ['DE', 'Germany', '81459000',],
+      ['FR', 'France', '64513242',],
+      ['GB', 'United Kingdom', '65097000',],
+      ['IN', 'India', '1285400000',],
+      ['RU', 'Russia', '146519759',],
+      ['US', 'United States', '322976000',],
     ]);
   }
 
